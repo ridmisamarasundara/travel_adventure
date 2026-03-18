@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Travel Website</title>
+
+<link rel="stylesheet" href="shop.css">
+
+<!-- Swiper CSS -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-hiking"></i>
+        <span>Travel.</span>
+      </div>
+       
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+      </ul>
+
+      <div class="icons">
+	  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Search overlay -->
+  <div class="search-form" id="search-form">
+    <span id="close-search">&times;</span>
+    <form>
+      <input type="text" placeholder="search here...">
+      <label for="search"><i class="fas fa-search"></i></label>
+    </form>
+  </div>
+
+  <!-- Sidebar menu -->
+  <div class="sidebar" id="sidebar">
+    <span id="close-sidebar">&times;</span>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+    </ul>
+  </div>
+
+<!-- ================= ADVENTURE SECTION ================= -->
+
+<section class="category">
+
+<h1 class="heading">Adventure Ideas</h1>
+
+<div class="box-container">
+
+<div class="box">
+<img src="images/bungee-jumping.webp" alt="">
+<h3>Bungee Jump</h3>
+<p>Extreme sport involving a free-fall jump from a high structure.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+<div class="box">
+<img src="images/zipline.webp" alt="">
+<h3>Zip Lines</h3>
+<p>Glide across beautiful landscapes using a cable system.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+<div class="box">
+<img src="images/canoeing.jpg" alt="">
+<h3>Canoeing</h3>
+<p>Enjoy peaceful water adventures using a paddle and canoe.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+<div class="box">
+<img src="images/kayaking.avif" alt="">
+<h3>Kayaking</h3>
+<p>Paddle through rivers and oceans with thrilling kayak rides.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FEATURED PRODUCTS ================= -->
+
+<section class="shop" id="shop">
+
+<h1 class="heading">Featured Products</h1>
+
+<div class="swiper product-slider">
+
+<div class="swiper-wrapper">
+
+
+<!-- PRODUCT 1 -->
+
+<div class="swiper-slide slide">
+
+<div class="image">
+<img src="images/cat-3.jpg" alt="">
+
+<div class="icons">
+<a href="#"><i class="fas fa-shopping-cart"></i></a>
+<a href="#"><i class="fas fa-eye"></i></a>
+<a href="#"><i class="fas fa-share"></i></a>
+</div>
+
+</div>
+
+<div class="content">
+<h3>Survival Kit</h3>
+<div class="price">$5.00 - $25.00</div>
+
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 2 -->
+
+<div class="swiper-slide slide">
+
+<div class="image">
+<img src="images/cat-2.jpg" alt="">
+
+<div class="icons">
+<a href="#"><i class="fas fa-shopping-cart"></i></a>
+<a href="#"><i class="fas fa-eye"></i></a>
+<a href="#"><i class="fas fa-share"></i></a>
+</div>
+
+</div>
+
+<div class="content">
+<h3>Adventure Backpack</h3>
+<div class="price">$20.00 - $60.00</div>
+
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 3 -->
+
+<div class="swiper-slide slide">
+
+<div class="image">
+<img src="images/cat-1.jpg" alt="">
+
+<div class="icons">
+<a href="#"><i class="fas fa-shopping-cart"></i></a>
+<a href="#"><i class="fas fa-eye"></i></a>
+<a href="#"><i class="fas fa-share"></i></a>
+</div>
+
+</div>
+
+<div class="content">
+<h3>Camping Tent</h3>
+<div class="price">$50.00 - $120.00</div>
+
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 4 -->
+
+<div class="swiper-slide slide">
+
+<div class="image">
+<img src="images/shoes.jpg" alt="">
+
+<div class="icons">
+<a href="#"><i class="fas fa-shopping-cart"></i></a>
+<a href="#"><i class="fas fa-eye"></i></a>
+<a href="#"><i class="fas fa-share"></i></a>
+</div>
+
+</div>
+
+<div class="content">
+<h3>Travel Shoes</h3>
+<div class="price">$30.00 - $80.00</div>
+
+<div class="stars">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= SWIPER JS ================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+var swiper = new Swiper(".product-slider", {
+
+loop:true,
+spaceBetween:20,
+
+navigation:{
+nextEl:".swiper-button-next",
+prevEl:".swiper-button-prev",
+},
+
+breakpoints:{
+
+0:{slidesPerView:1},
+
+768:{slidesPerView:2},
+
+1024:{slidesPerView:3}
+
+}
+
+});
+
+</script>
+
+<script>
+    // Toggle sidebar for mobile
+    const toggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const closeSidebar = document.getElementById('close-sidebar');
+
+    toggle.addEventListener('click', () => {
+      sidebar.classList.add('active');
+    });
+
+    closeSidebar.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+    });
+
+    // Toggle search overlay
+    const searchIcon = document.getElementById('search-icon');
+    const searchForm = document.getElementById('search-form');
+    const closeSearch = document.getElementById('close-search');
+
+    searchIcon.addEventListener('click', (e) => {
+      e.preventDefault();
+      searchForm.classList.add('active');
+    });
+
+    closeSearch.addEventListener('click', () => {
+      searchForm.classList.remove('active');
+    });
+
+    // Close search with Esc key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === "Escape") {
+        searchForm.classList.remove('active');
+        sidebar.classList.remove('active');
+      }
+    });
+  </script>
+
+</body>
+</html>
