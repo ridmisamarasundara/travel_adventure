@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Travel Website</title>
+
+<link rel="stylesheet" href="packages.css">
+
+<!-- Swiper CSS -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+</head>
+<body>
+
+    <header>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-hiking"></i>
+        <span>Travel.</span>
+      </div>
+       
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+      </ul>
+
+      <div class="icons">
+	  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Search overlay -->
+  <div class="search-form" id="search-form">
+    <span id="close-search">&times;</span>
+    <form>
+      <input type="text" placeholder="search here...">
+      <label for="search"><i class="fas fa-search"></i></label>
+    </form>
+  </div>
+
+  <!-- Sidebar menu -->
+  <div class="sidebar" id="sidebar">
+    <span id="close-sidebar">&times;</span>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+    </ul>
+  </div>
+
+<!-- PACKAGE SECTION -->
+
+<section class="packages">
+
+<h1 class="heading">Popular Packages</h1>
+
+<div class="box-container">
+
+<div class="box">
+<img src="images/image-1.jpg">
+<h3>Beach Holiday</h3>
+<p>Enjoy a relaxing holiday near the beautiful beach with amazing sea views.</p>
+<div class="price">$250 - $450</div>
+<a href="#" class="btn">Explore Now</a>
+</div>
+
+<div class="box">
+<img src="images/image-2.jpg">
+<h3>Mountain Adventure</h3>
+<p>Explore mountains, fresh air, and wonderful nature views.</p>
+<div class="price">$250 - $450</div>
+<a href="#" class="btn">Explore Now</a>
+</div>
+
+<div class="box">
+<img src="images/image-3.jpg">
+<h3>City Tour</h3>
+<p>Visit famous places in the city and enjoy shopping and local food.</p>
+<div class="price">$250 - $450</div>
+<a href="#" class="btn">Explore Now</a>
+</div>
+
+<div class="box">
+<img src="images/image-4.jpg">
+<h3>Island Trip</h3>
+<p>Discover small islands, clear water, and peaceful nature.</p>
+<div class="price">$250 - $450</div>
+<a href="#" class="btn">Explore Now</a>
+</div>
+
+<div class="box">
+<img src="images/image-5.jpg">
+<h3>Wildlife Safari</h3>
+<p>See amazing animals and enjoy an exciting jungle safari experience.</p>
+<div class="price">$250 - $450</div>
+<a href="#" class="btn">Explore Now</a>
+</div>
+
+<div class="box">
+<img src="images/image-6.jpg">
+<h3>Camping Adventure</h3>
+<p>Spend the night in nature with fun outdoor camping activities.</p>
+<div class="price">$250 - $450</div>
+<a href="#" class="btn">Explore Now</a>
+</div>
+
+</div>
+</section>
+
+
+<!-- SERVICE SECTION -->
+
+<section class="service">
+
+<h1 class="heading">What We Offer</h1>
+
+<div class="box-container">
+
+<div class="box">
+<img src="images/serv-1.png">
+<h3>Complete Guide</h3>
+<p>Our expert guides help you explore every place safely and easily.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+<div class="box">
+<img src="images/serv-2.png">
+<h3>Custom Packages</h3>
+<p>We create travel packages based on your needs and budget.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+<div class="box">
+<img src="images/serv-3.png">
+<h3>Family Trips</h3>
+<p>Special travel plans designed for fun and safe family vacations.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+<div class="box">
+<img src="images/serv-4.png">
+<h3>Train Guides</h3>
+<p>Enjoy train journeys with helpful travel guides and tips.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+<div class="box">
+<img src="images/serv-6.png">
+<h3>Adventure Trail</h3>
+<p>Experience exciting hiking, climbing, and outdoor adventures.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+<div class="box">
+<img src="images/serv-5.png">
+<h3>Various Adventures</h3>
+<p>Try different adventure activities for a thrilling travel experience.</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+</div>
+</section>
+
+<script>
+    // Toggle sidebar for mobile
+    const toggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const closeSidebar = document.getElementById('close-sidebar');
+
+    toggle.addEventListener('click', () => {
+      sidebar.classList.add('active');
+    });
+
+    closeSidebar.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+    });
+
+    // Toggle search overlay
+    const searchIcon = document.getElementById('search-icon');
+    const searchForm = document.getElementById('search-form');
+    const closeSearch = document.getElementById('close-search');
+
+    searchIcon.addEventListener('click', (e) => {
+      e.preventDefault();
+      searchForm.classList.add('active');
+    });
+
+    closeSearch.addEventListener('click', () => {
+      searchForm.classList.remove('active');
+    });
+
+    // Close search with Esc key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === "Escape") {
+        searchForm.classList.remove('active');
+        sidebar.classList.remove('active');
+      }
+    });
+  </script>
+
+</body>
+</html>
