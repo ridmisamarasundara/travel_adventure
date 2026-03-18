@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Header</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-hiking"></i>
+        <span>Travel.</span>
+      </div>
+       
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Blogs</a></li>
+      </ul>
+
+      <div class="icons">
+	  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Search overlay -->
+  <div class="search-form" id="search-form">
+    <span id="close-search">&times;</span>
+    <form>
+      <input type="text" placeholder="search here...">
+      <label for="search"><i class="fas fa-search"></i></label>
+    </form>
+  </div>
+
+  <!-- Sidebar menu -->
+  <div class="sidebar" id="sidebar">
+    <span id="close-sidebar">&times;</span>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Packages</a></li>
+      <li><a href="#">Reviews</a></li>
+      <li><a href="#">Blogs</a></li>
+    </ul>
+  </div>
+
+  <script>
+    // Toggle sidebar for mobile
+    const toggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const closeSidebar = document.getElementById('close-sidebar');
+
+    toggle.addEventListener('click', () => {
+      sidebar.classList.add('active');
+    });
+
+    closeSidebar.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+    });
+
+    // Toggle search overlay
+    const searchIcon = document.getElementById('search-icon');
+    const searchForm = document.getElementById('search-form');
+    const closeSearch = document.getElementById('close-search');
+
+    searchIcon.addEventListener('click', (e) => {
+      e.preventDefault();
+      searchForm.classList.add('active');
+    });
+
+    closeSearch.addEventListener('click', () => {
+      searchForm.classList.remove('active');
+    });
+
+    // Close search with Esc key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === "Escape") {
+        searchForm.classList.remove('active');
+        sidebar.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
