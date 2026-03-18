@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Header</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Travel Adventure</title>
+
+  <link rel="stylesheet" href="styles.css">
+  
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+
 </head>
 <body>
   <header>
@@ -17,12 +23,12 @@
       </div>
        
       <ul class="nav-links" id="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Packages</a></li>
-        <li><a href="#">Reviews</a></li>
-        <li><a href="#">Blogs</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
       </ul>
 
       <div class="icons">
@@ -48,14 +54,73 @@
   <div class="sidebar" id="sidebar">
     <span id="close-sidebar">&times;</span>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">Packages</a></li>
-      <li><a href="#">Reviews</a></li>
-      <li><a href="#">Blogs</a></li>
+      <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
     </ul>
   </div>
+
+   <!--home section starts -->
+
+<section class="home" id="home">
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box" style="background: url(images/home-bg-1.jpg) no-repeat;">
+                  <div class="content">
+                    <span>Never Stop</span>
+                    <h3>exploring</h3>
+                    <p>Discover breathtaking landscapes, vibrant cultures, and unforgettable journeys across the globe. 
+                       Let every step take you closer to new experiences and endless adventures!
+                    </p>
+                    <a href="#" class="btn">get started</a>
+                  </div>
+                </div>
+            </div>
+
+
+         <div class="swiper-slide">
+                <div class="box second" style="background: url(images/home-bg-3.jpg) no-repeat center/cover;">
+                  <div class="content">
+                    <span>Explore the</span>
+                    <h3>new world</h3>
+                    <p>
+                    Unlock the beauty of unexplored destinations and immerse yourself in unforgettable journeys. 
+                    Your next great adventure starts here!
+                    </p>
+                    <a href="#" class="btn">get started</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box third" style="background: url(images/home-bg-2.jpg) no-repeat;">
+                  <div class="content">
+                    <span>Make Tour</span>
+                    <h3>amazing</h3>
+                    <p>Experience travel like never before with personalized trips designed for comfort, excitement, 
+                    and unforgettable memories at every step!</p>
+                    <a href="#" class="btn">get started</a>
+                  </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+
+<!--home section ends-->
+
+
 
   <script>
     // Toggle sidebar for mobile
@@ -93,5 +158,11 @@
       }
     });
   </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<!--custom js file link -->
+  <script src="script.js"></script> <!--js/-->
+
 </body>
 </html>
