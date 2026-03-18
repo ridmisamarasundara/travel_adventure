@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Travel Adventure</title>
+
+<link rel="stylesheet" href="about.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-hiking"></i>
+        <span>Travel.</span>
+      </div>
+       
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+      </ul>
+
+      <div class="icons">
+	  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Search overlay -->
+  <div class="search-form" id="search-form">
+    <span id="close-search">&times;</span>
+    <form>
+      <input type="text" placeholder="search here...">
+      <label for="search"><i class="fas fa-search"></i></label>
+    </form>
+  </div>
+
+  <!-- Sidebar menu -->
+  <div class="sidebar" id="sidebar">
+    <span id="close-sidebar">&times;</span>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+    </ul>
+  </div>
+
+
+<!-- ABOUT HERO -->
+<section class="about-hero">
+<div class="content">
+<h1>About Us</h1>
+<p>Explore the world with passion and adventure</p>
+</div>
+</section>
+
+<!-- ABOUT DETAILS -->
+<section class="about-details">
+
+<div class="row">
+
+<div class="image">
+<img src="images/about.jpg">
+</div>
+
+<div class="content">
+<h3>Why Choose Us?</h3>
+<p>
+We provide the best travel experiences with professional guides, 
+affordable prices, and unforgettable adventures.
+</p>
+
+<ul>
+<li>✔ 10+ Years Experience</li>
+<li>✔ 1000+ Happy Travelers</li>
+<li>✔ Affordable Packages</li>
+<li>✔ 24/7 Support</li>
+</ul>
+
+<a href="#" class="btn">Explore Now</a>
+</div>
+
+</div>
+</section>
+
+<!-- OUR MISSION -->
+<section class="mission">
+
+<h1 class="heading">Our Mission</h1>
+
+<p>
+Our mission is to inspire people to explore the world, experience new cultures, 
+and create unforgettable memories through safe and exciting travel experiences.
+</p>
+
+</section>
+
+<!-- TEAM -->
+<section class="team">
+
+<h1 class="heading">Our Team</h1>
+
+<div class="box-container">
+
+<div class="box">
+<img src="images/p1.avif">
+<h3>John Doe</h3>
+<p>Tour Guide</p>
+</div>
+
+<div class="box">
+<img src="images/p2.jpg">
+<h3>Jane Smith</h3>
+<p>Travel Planner</p>
+</div>
+
+<div class="box">
+<img src="images/p3.avif">
+<h3>Jenny Lee</h3>
+<p>Adventure Expert</p>
+</div>
+
+</div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+
+<div class="box">
+<h3>1000+</h3>
+<p>Happy Clients</p>
+</div>
+
+<div class="box">
+<h3>200+</h3>
+<p>Destinations</p>
+</div>
+
+<div class="box">
+<h3>10+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="box">
+<h3>24/7</h3>
+<p>Support</p>
+</div>
+
+</section>
+
+<script>
+    // Toggle sidebar for mobile
+    const toggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const closeSidebar = document.getElementById('close-sidebar');
+
+    toggle.addEventListener('click', () => {
+      sidebar.classList.add('active');
+    });
+
+    closeSidebar.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+    });
+
+    // Toggle search overlay
+    const searchIcon = document.getElementById('search-icon');
+    const searchForm = document.getElementById('search-form');
+    const closeSearch = document.getElementById('close-search');
+
+    searchIcon.addEventListener('click', (e) => {
+      e.preventDefault();
+      searchForm.classList.add('active');
+    });
+
+    closeSearch.addEventListener('click', () => {
+      searchForm.classList.remove('active');
+    });
+
+    // Close search with Esc key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === "Escape") {
+        searchForm.classList.remove('active');
+        sidebar.classList.remove('active');
+      }
+    });
+  </script>
+
+</body>
+</html>
